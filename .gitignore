@@ -4,6 +4,7 @@
 #Spring legacy
 target/
 .classpath
+pom.properties
 
 #tomcat
 Servers/
