@@ -116,13 +116,7 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
-<<<<<<< HEAD
-		
 
-				
-=======
-	
->>>>>>> ac8d98459dc01bcbe9dfe13a01c26958e53f87f0
 
 	</dependencies>
     <build>
