@@ -21,29 +21,29 @@
   <body>
     <div class="container">
       <div class="text-center">
-        <h3>user3 등록</h3>
+        <h3>user3 수정</h3>
         <a href="/Ch05/" role="button" class="btn btn-outline-info">메인</a>
         <a href="/Ch05/user3" role="button" class="btn btn-outline-dark">user3 목록</a>
       </div>
-      <form action="/Ch05/user3/register" method="post" class="col-6 mx-auto">
+      <form action="/Ch05/user3/modify" method="post" class="col-6 mx-auto">
         <div class="mb-3">
           <label for="uid" class="form-label">uid</label>
-          <input type="text" name="uid" class="form-control" />
+          <input type="text" name="uid" class="form-control" value="${user.uid}" readonly/>
         </div>
         <div class="mb-3">
           <label for="name" class="form-label">name</label>
-          <input type="text" class="form-control" name="name"/>
+          <input type="text" class="form-control" name="name" value="${user.name}"/>
         </div>
         <div class="mb-3">
           <label for="hp" class="form-label">hp</label>
-          <input type="text" class="form-control" name="hp" />
+          <input type="text" class="form-control" name="hp" value="${user.hp}"/>
         </div>
         <div class="mb-3">
           <label for="age" class="form-label">age</label>
-          <input type="text" class="form-control" name="age" />
+          <input type="text" class="form-control" name="age" value="${user.age}"/>
         </div>
         <div class="text-center">
-          <input type="submit" value="등록" class="btn btn-success" />
+          <input type="submit" value="수정" class="btn btn-success" />
         </div>
       </form>
     </div>

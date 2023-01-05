@@ -17,4 +17,20 @@ public class User3DAO {
 	public List<User3VO> selelctUser3s(){
 		return mybatis.selectList("user3.selectUser3s");
 	}
+	
+	public User3VO selectUser3(String uid) {
+		return mybatis.selectOne("user3.selectUser3", uid);
+	}
+	
+	public void insertUser3(User3VO vo) {
+		mybatis.insert("user3.insertUser3", vo);
+	}
+	
+	public void updateUser3(User3VO vo) {
+		mybatis.update("user3.updateUser3", vo);
+	}
+	
+	public void deleteUser3(String uid) {
+		mybatis.delete("user3.deleteUser3", uid);
+	}
 }

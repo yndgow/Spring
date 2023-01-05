@@ -26,9 +26,30 @@ public class User3Controller {
 		return "/user3/register";
 	}
 	
-	@PostMapping("/user3/reigser")
+	@PostMapping("/user3/register")
 	public String user3Register(User3VO vo) {
-		
-		return "/user3/register";
+		service.insertUser3(vo);
+		return "redirect:/user3";
 	}
+	
+	@GetMapping("/user3/modify")
+	public String user3Modify(String uid, Model m) {
+		m.addAttribute("user", service.selectUser3(uid));
+		return "/user3/modify";
+	}
+	
+	@PostMapping("/user3/modify")
+	public String user3Modify(User3VO vo, Model m) {
+		service.updateUser3(vo);
+		return "redirect:/user3";
+	}
+	
+	@GetMapping("/user3/delete")
+	public String user3Delete(String uid) {
+		service.deleteUser3(uid);
+		return "redirect:/user3";
+	}
+	
+	
+	
 }
