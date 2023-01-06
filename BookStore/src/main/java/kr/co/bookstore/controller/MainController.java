@@ -1,4 +1,4 @@
-package main.java.kr.co.ch05.controller;
+package kr.co.bookstore.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
 	
 	@GetMapping(value= {"/", "/index"})
-	public String index() {
+	public String index()	{
 		return "/index";
 	}
 }
