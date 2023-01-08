@@ -10,8 +10,8 @@
 </head>
 <body>
     <h3>도서목록</h3>
-    <a href="/BookStore">처음으로</a>
-    <a href="/BookStore/book/register">도서등록</a>
+    <a href="/Store">처음으로</a>
+    <a href="/Store/book/register">도서등록</a>
 
     <table border="1">
         <tr>
@@ -28,8 +28,8 @@
             <td>${book.publisher}</td>
             <td>${book.price}</td>
             <td>
-               <a href="/BookStore/book/modify?bookId=${book.bookId}">수정</a>
-               <a href="/BookStore/book/delete?bookId=${book.bookId}">삭제</a>
+               <a href="/Store/book/modify?bookId=${book.bookId}">수정</a>
+               <a href="/Store/book/delete?bookId=${book.bookId}">삭제</a>
             </td>
         </tr>
 		</c:forEach>

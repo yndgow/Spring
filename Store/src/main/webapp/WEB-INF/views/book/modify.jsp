@@ -10,9 +10,9 @@
   </head>
   <body>
     <h3>도서수정</h3>
-    <a href="/BookStore">처음으로</a>
-    <a href="/BookStore/book/list">도서목록</a>
-    <form action="/BookStore/book/modify" method="post">
+    <a href="/Store">처음으로</a>
+    <a href="/Store/book/list">도서목록</a>
+    <form action="/Store/book/modify" method="post">
       <table border="1">
         <tr>
           <td>도서번호</td>

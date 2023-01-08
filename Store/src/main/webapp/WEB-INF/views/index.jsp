@@ -9,7 +9,7 @@
 </head>
 <body>
     <h3>BookStore</h3>
-    <a href="/BookStore/book/list">도서목록</a>
-    <a href="/BookStore/customer/list">고객목록</a>
+    <a href="/Store/book/list">도서목록</a>
+    <a href="/Store/customer/list">고객목록</a>
 </body>
 </html>

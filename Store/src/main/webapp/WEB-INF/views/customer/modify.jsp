@@ -10,9 +10,9 @@
   </head>
   <body>
     <h3>고객수정</h3>
-    <a href="/BookStore">처음으로</a>
-    <a href="/BookStore/customer/list">고객목록</a>
-    <form action="/BookStore/customer/modify" method="post">
+    <a href="/Store">처음으로</a>
+    <a href="/Store/customer/list">고객목록</a>
+    <form action="/Store/customer/modify" method="post">
       <table border="1">
         <tr>
           <td>고객번호</td>

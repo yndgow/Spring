@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="customer">
-		<select id="selectCustomers" resultType="kr.co.store.vo.CustomerVO">
+<mapper namespace="kr.co.store.mapper.CustomerMapper">
+		<select id="selectCustomerVOs" resultType="kr.co.store.vo.CustomerVO">
 		SELECT * FROM `customer`;
 	</select>
-	<select id="selectCustomer" resultType="kr.co.store.vo.CustomerVO" >
+	<select id="selectCustomerVO" resultType="kr.co.store.vo.CustomerVO" >
 		SELECT * FROM `customer` WHERE `custId` = #{custId};
 	</select>
-	<insert id="insertCustomer">
+	<insert id="insertCustomerVO">
 		INSERT INTO `customer` SET `name` = #{name}, `address` = #{address}, `phone` = #{phone};
 	</insert>
-	<update id="updateCustomer">
+	<update id="updateCustomerVO">
 		UPDATE `customer` SET `name` = #{name}, `address` = #{address}, `phone` = #{phone} WHERE `custId` = #{custId};
 	</update>
-	<delete id="deleteCustomer">
+	<delete id="deleteCustomerVO">
 		DELETE FROM `customer` WHERE `custId` = #{custId};
 	</delete>
 </mapper>

@@ -33,13 +33,11 @@ public class BookServiceImpl implements BookService{
 	@Override
 	public void updateBookVO(BookVO vo) {
 		bookMapper.updateBookVO(vo);
-		
 	}
 
 	@Override
 	public void deleteBookVO(String bookId) {
 		bookMapper.deleteBookVO(bookId);
-		
 	}
 
 }
